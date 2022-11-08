@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        var num  = 0;
+        function start(){
+            var count = document.getElementById('para');
+           const fun = setInterval(()=>{
+                num++;
+                count.innerHTML = num;
+            },1000)
+            return fun;
+        }
+       
+        
+    </script>
+</head>
+<body>
+    <p id="para"></p>
+    <form>
+        <button type="button" onclick="start()">Start</button>
+        
+        
+    </form>
+
+    
+</body>
+</html>
